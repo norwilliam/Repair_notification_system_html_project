@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแก้ไขสถานะรายงาน</title>
+    <link rel="stylesheet" href="styles/reportedit.css">
+</head>
+
+<body>
+    <header>
+        <h1>📑 ระบบแก้ไขสถานะรายงาน</h1>
+        <nav>
+            <ul>
+                <li><a href="inventory.html">📦 ระบบส่งคำร้องเบิกพัสดุ</a></li>
+                <li><a href="inventorylist.html">📄 รายการเบิกพัสดุทั้งหมด</a></li>
+                <li><button id="logout">ออกจากระบบ</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="updateStatusForm">
+            <label for="reportId">ID รายงาน:</label>
+            <input type="text" id="reportId" name="reportId" required><br>
+            <label for="status">สถานะ:</label>
+            <select id="status" name="status" required>
+                <option value="กำลังดำเนินการ">กำลังดำเนินการ</option>
+                <option value="ดำเนินการเสร็จสิ้น (ซ่อมได้)">ดำเนินการเสร็จสิ้น (ซ่อมได้)</option>
+                <option value="ดำเนินการเสร็จสิ้น (ซ่อมไม่ได้)">ดำเนินการเสร็จสิ้น (ซ่อมไม่ได้)</option>
+            </select><br>
+            <button type="submit">อัปเดตสถานะ</button>
+        </form>
+        <section id="reports">
+            <h2>รายงานแจ้งซ่อมทั้งหมด</h2>
+            <div id="reportList_2"></div>
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+    <script src="updateStatus.js"></script>
+</body>
+
+</html>
