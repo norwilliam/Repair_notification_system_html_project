@@ -42,7 +42,6 @@ document.getElementById('updateStatusForm').addEventListener('submit', async (ev
     }
 });
 
-// updateStatus.js
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('backButton').addEventListener('click', () => {
         window.location.href = 'dashboard.html'; // เปลี่ยนเส้นทางไปที่หน้า dashboard

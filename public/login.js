@@ -14,7 +14,7 @@ document.getElementById('authForm').addEventListener('submit', async (e) => {
             body: JSON.stringify({ username, password })
         });
 
-        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.ok) throw new Error('มีข้อผิดพลาดในการตอบสนองของเครือข่าย');
 
         const result = await response.json();
         localStorage.setItem('token', result.token); // เก็บ token
@@ -31,6 +31,6 @@ document.getElementById('authForm').addEventListener('submit', async (e) => {
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Login failed. Please try again.');
+        alert('Username หรือ Password ไม่ถูกต้อง \nโปรดลองใหม่อีกครั้ง');
     }
 });

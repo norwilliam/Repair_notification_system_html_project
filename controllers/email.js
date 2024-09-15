@@ -35,7 +35,7 @@ const sendNotificationEmail2 = () => {
         from: process.env.EMAIL,
         to: '652021048@tsu.ac.th',
         subject: 'แจ้งเตือนการเปลี่ยนแปลงสถานะคำร้องแจ้งซ่อม',
-        text: 'คำร้องแจ้งซ่อมของคุณมีปรับเปลี่ยนสถานะ สามารถตรวจสอบได้ที่ http://localhost:3000/dashboard.html'
+        text: 'คำร้องแจ้งซ่อมของคุณมีการปรับเปลี่ยนสถานะ สามารถตรวจสอบได้ที่ http://localhost:3000/dashboard.html'
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

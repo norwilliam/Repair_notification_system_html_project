@@ -94,3 +94,7 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+button {
+    font-size: 16px;
+}

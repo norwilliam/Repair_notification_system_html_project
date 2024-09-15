@@ -94,3 +94,34 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* ขยายข้อความในฟอร์ม */
+label {
+    font-size: 16px; /* ขนาดข้อความ */
+    margin-bottom: 10px; /* ระยะห่างระหว่างข้อความกับฟอร์ม */
+    display: inline-block;
+}
+
+/* ขยาย input และ select */
+input[type="text"], select {
+    font-size: 16px; /* ขนาดข้อความ */
+    padding: 10px; /* ระยะห่างภายในกล่อง */
+    width: 300px; /* ความกว้างของกล่อง */
+    margin-bottom: 15px; /* ระยะห่างระหว่างกล่อง */
+}
+
+/* ขยายปุ่ม */
+button {
+    font-size: 16px; /* ขนาดข้อความในปุ่ม */
+    padding: 10px 20px; /* ระยะห่างภายในปุ่ม */
+    background-color: #4CAF50; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีข้อความในปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    cursor: pointer; /* เปลี่ยน cursor เมื่อ hover */
+    border-radius: 4px; /* เพิ่มมุมมน */
+}
+
+/* ปุ่ม hover */
+button:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อ hover */
+}
